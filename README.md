@@ -15,6 +15,14 @@ Using the **Amazon Multilingual Reviews Corpus (MARC)**, we evaluated how differ
 2.  **Compare Architectures:** Analyze the trade-offs between efficiency (DistilBERT) and fairness (XLM-RoBERTa).
 3.  **Evaluate Mitigation Strategies:** Test if ensembling models reduces or amplifies existing biases.
 
+### Regulatory Context: EU AI Act Compliance
+Under the **EU AI Act (2026)**, AI models deployed in high-risk areas (like HR, Credit, or Education) require rigorous **Fundamental Rights Impact Assessments**.
+
+This project simulates a **Level 2 Technical Audit**, demonstrating:
+*   **Bias Detection:** Measuring *Disparate Impact* across protected groups (Language/Demographics).
+*   **Risk Mitigation:** Evaluating if "Ensembling" serves as a valid control mechanism for reducing algorithmic harm.
+*   **Transparency:** documenting the "Pessimism Bias" inherent in distilled models.
+
 ---
 
 ## Project Architecture
@@ -61,7 +69,7 @@ This project was a collaborative effort at the University of Bologna.
 *   **Pipeline Optimization:** Designed strategies to optimize training efficiency and reduce computational resource usage for the large XLM-R model.
 *   **Fairness Analysis:** Led the definition and analysis of equity metrics (Statistical Parity, Equal Opportunity) to evaluate model bias.
 *   **Ensemble:** Developed the ensemble strategy for **German** language data.
-*   **Ensemble** Lead the development of the global ensemble.
+*   **Ensemble** Designed the Global Ensemble Voting strategy to aggregate predictions across architectures.
 
 **Paul-Ioan Clotan**
 *   Designed the dataset preprocessing pipeline.
